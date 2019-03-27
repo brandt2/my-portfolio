@@ -2010,7 +2010,8 @@ input, select, textarea {
 				top: 0;
 				margin: 1.5em 0 0 0;
 				padding: 1.5em 1.5em 0 1.5em;
-				font-size: 1.5em;
+				/* font-size: 1.5em; */
+				font-size: 20px;
 				line-height: 1.75em;
 				border-top: solid 1px rgba(224, 224, 224, 0.75);
 				display: inline-block;
@@ -2619,10 +2620,15 @@ input, select, textarea {
 		}
 
 			.feature .image img {
-				display: block;
+				/* display: block;
 				min-height: 100%;
 				min-width: 100%;
-				position: absolute;
+				position: absolute; */
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				background-repeat: no-repeat;
+				background-position: center;
 			}
 
 		.feature:before {
@@ -2933,7 +2939,8 @@ input, select, textarea {
 		/* Section/Article */
 
 			header.major p {
-				font-size: 1.25em;
+				/* font-size: 1.25em; */
+				font-size: 18px;
 			}
 
 		/* Header */
@@ -2979,7 +2986,8 @@ input, select, textarea {
 			}
 
 				header.major p {
-					font-size: 1.15em;
+					/* font-size: 1.15em; */
+					font-size: 16px;
 				}
 
 			footer.major {
