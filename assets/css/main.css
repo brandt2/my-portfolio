@@ -1979,7 +1979,8 @@ input, select, textarea {
 			border-color: rgba(224, 224, 224, 0.75);
 			border-style: solid;
 			border-top-width: 1px;
-			margin-bottom: 6em;
+			/* margin-bottom: 6em; */
+			margin-bottom: 40px;
 			padding: 4em 0;
 			position: relative;
 		}
@@ -2225,7 +2226,8 @@ input, select, textarea {
 				-webkit-transition: -webkit-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 				-ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
 				transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
-				color: #fff;
+				/* color: #fff; */
+				color: transparent;
 				font-size: 6em;
 				height: 1em;
 				left: 50%;
@@ -2243,6 +2245,7 @@ input, select, textarea {
 				-webkit-transform: translateZ(1em);
 				-ms-transform: translateZ(1em);
 				transform: translateZ(1em);
+				color: white;
 			}
 
 			.image.icon:hover:after {
@@ -2598,7 +2601,10 @@ input, select, textarea {
 
 	.feature {
 		position: relative;
-		height: 20em;
+		/* height: 20em; */
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
 
 		.feature:after {
@@ -2673,6 +2679,8 @@ input, select, textarea {
 
 		.feature.right {
 			text-align: right;
+			display: flex;
+			flex-direction: row-reverse;
 		}
 
 			.feature.right .image {
@@ -2897,7 +2905,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 6em 0 5em 0;
+		padding: 6em 0 0 0;
 		position: relative;
 		z-index: 1;
 	}
@@ -3053,7 +3061,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 4em 0 3em 0;
+				padding: 4em 0 0 0;
 			}
 
 	}
@@ -3213,7 +3221,7 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				padding: 2em 0 2em 0;
+				padding: 2em 0 0 0;
 			}
 
 	}
@@ -3294,3 +3302,30 @@ input, select, textarea {
 				}
 
 	}
+	
+.skills {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.skills > li {
+	padding: 0 10px;
+	margin-bottom: 30px;
+}
+
+.test {
+	font-size: 120px;
+	height: 140px;
+	/* padding: 0 30px; */
+}
+
+.test1 {
+	height: 110px;
+	width: 110px;
+	margin-bottom: 5px;
+}
+
+.project {
+	background: white;
+}
